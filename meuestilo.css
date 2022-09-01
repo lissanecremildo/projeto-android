@@ -186,6 +186,7 @@ ul{
     list-style-position: inside; /*Indica que o símbolo estará dentro da caixa 'ul'*/
     margin: 10px;
     max-width: 500;
+    text-size-adjust: auto;
 }
 
 
