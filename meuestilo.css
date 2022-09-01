@@ -185,6 +185,7 @@ ul{
     columns: 2; /*Define o numero de colunas que a lista terá, por padrao é uma coluna*/
     list-style-position: inside; /*Indica que o símbolo estará dentro da caixa 'ul'*/
     margin: 10px;
+    max-width: 500;
 }
 
 
