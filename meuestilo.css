@@ -1,0 +1,209 @@
+@charset "UTF-8";
+@font-face {
+    font-family:'android';
+    src: url('fontes/idroid.otf') format('opentype');
+}
+
+:root{ /**Declarando variáceis para cores e fontes*/
+    --cor01:#c5ebd6;
+    --cor02:#83E1AD;
+    --cor03:#3DDC84;
+    --cor04:#2FA866;
+    --cor05:#1A5C37;
+    --cor06:#063d1e;
+    --cor07:#e7e5c1;
+    --cor08:#e1dfbc;
+
+    --font01: Arial, Helvetica, sans-serif;
+    --font02: 'Quicksand', sans-serif;
+    --font03: 'android', Arial, Helvetica, sans-serif;
+
+}
+
+*{/*Definindo propriedades gerais para todos (*) os elementos HTML*/
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-image: linear-gradient(to right, #c5ebd6,#83E1AD, #3DDC84);
+    margin: 0px;
+    border: 0px solid;
+    font-family:'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
+header{
+    background-image: linear-gradient(to bottom, var(--cor03), var(--cor06));
+    border: 1px var(--cor06) solid;
+    font-family: var(--font02);
+    font-weight: 200;
+}
+
+header>h1{
+    color:white;
+    text-align: center;
+    margin: 30px 0px 20px 0px;
+    font-weight: lighter;
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.664);
+}
+
+header>p{
+    color:white;
+    text-align: center;
+    margin: auto;
+    width: 450px;
+}
+
+header>nav{
+    margin: 10px 0px 2px 10px;
+}
+header>nav>a{
+    color: var(--cor02);
+    text-decoration: none;
+    margin:10px;
+}
+
+header>nav>a:hover{
+    background-color: var(--cor01);
+    color: var(--cor06);
+    border-radius: 5px;
+    font-weight: 700;
+    transition-duration: 1.0s;
+    
+}
+
+
+main{
+    background-color: #fff;
+    border: 1px solid white;
+    margin:auto;
+    border-radius: 0px 0px 10px 10px;
+    max-width: 800px;
+    min-width: 280px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.603);
+}
+
+article{
+    margin: 20px;
+    border: 20px solid white;
+}
+
+article>h2{
+    font-family: 'android', Arial, Helvetica, sans-serif;
+    color:var(--cor05);
+    font-weight: lighter;
+    margin:10px;
+    
+}
+article>h3{
+    font-family: var(--font03);
+    color: var(--cor05);
+    font-weight: lighter;
+    background-image:linear-gradient(to right, #61f7a5c0, #a5c5b800);
+    margin: 10px;
+    
+}
+
+article>p{
+    text-align: justify;
+    text-indent: 20px;
+    line-height:2.0em;
+}
+
+main a{
+    color: var(--cor06);
+    background-color: var(--cor02);
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+main a:hover{
+    color: var(--cor06);
+    background-color: var(--cor02);
+    font-weight: 700;
+    border-radius: 5px;
+}
+
+main a::after{
+    content: '\00A0\1F517';
+}
+
+img{
+    width: 100%;
+}
+
+img.pequena{ 
+    max-width: 250px; /*Limita o tamanho da imagem, evitando que fique exageradamente grande*/
+    display: block; /*O valor block ajuda a movimentar a imagem para a posição da tela onde a queremos visualizar. Neste caso, vai ocupar o centro, devido ao valor AUTO da margin.*/
+    margin: auto;
+}
+
+aside{
+    border: 5x solid  #759c97;
+    text-align: justify;
+    background-color: #759c97;
+    border-radius: 10px;
+}
+aside>h3{
+    background-color: var(--cor04);
+    border: 5px solid var(--cor04);
+    margin: 15px 0px 10px 0px;
+    text-align: center;
+    border-radius: 5px 5px 0px 0px;
+    color: #fff;
+}
+aside>p{
+    text-align: justify;
+    margin: 0px 5px 10px 10px;
+}
+
+#pagina-android{
+    text-align: justify;
+    border: 10px solid white;
+    margin: 30px;
+}
+
+.video{
+    position: relative; /*O valor relative do parametro position, permite que o video se adapte a variaçao do tamanho da tela do browser*/
+    background-color: var(--cor06);
+    margin: auto;
+    padding-bottom: 50%; /*Define altura da div que contém o video*/
+    
+}
+
+.video>iframe{
+    position: absolute; /*o valor absolute permite que o iframe, que é conteiner que contem o video, siga o tamaho da div .video, que o seu conteiner pai*/
+    top: 2%;
+    left: 2%;
+    width: 96%;
+    height: 90%;
+}
+
+ul{
+    list-style-type: '\2714\0020\0020'; /*Personalizando o símbolo da lista 'ul', para mais simbolos, consulta emojipedia*/
+    columns: 2; /*Define o numero de colunas que a lista terá, por padrao é uma coluna*/
+    list-style-position: inside; /*Indica que o símbolo estará dentro da caixa 'ul'*/
+    margin: 10px;
+}
+
+
+footer>p{
+    text-align: center;
+    color: black;
+    font-weight: 500;
+    
+
+}
+
+footer>p>a{
+    text-decoration: none;
+    color: rgb(32, 182, 57);
+}
+
+footer>p>a:hover{
+    color: yellow;
+}
+
+
+
